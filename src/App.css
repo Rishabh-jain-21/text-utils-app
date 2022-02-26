@@ -1,0 +1,63 @@
+/* basic layout design */
+* {
+  margin: 0;
+  padding: 0;
+}
+.main-Container {
+  width: 100vw;
+  background: #fefdca;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.input-area {
+  box-sizing: border-box;
+  resize: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  width: 85vw;
+  background: #e0f9b5;
+  height: 45vh;
+  font-size: 20px;
+}
+.input-area::-webkit-scrollbar {
+  display: none;
+}
+.textarea-img {
+  width: 35px;
+  background: #e0f9b5;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: -40px;
+}
+.textarea-img2 {
+  width: 30px;
+  position: absolute;
+  background: #e0f9b5;
+  margin-top: 26px;
+  margin-left: -80px;
+}
+.textarea-img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.textarea-img2:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .input-area {
+    font-size: 14px;
+    width: 95vw;
+    height: 35vh;
+    padding: 10px 10px;
+  }
+  .textarea-img {
+    width: 30px;
+  }
+  .textarea-img2 {
+    width: 25px;
+    margin-left: -70px;
+  }
+}
